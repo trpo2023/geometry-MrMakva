@@ -1,5 +1,5 @@
-all: main
-main: main.c
-	gcc -Wall -Werror -o main main.c
+all: geom
+main: geom.c
+	gcc -Wall -Werror -o geom geom.c
 run:
-	./main
+	./geom
