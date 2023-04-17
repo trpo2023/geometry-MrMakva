@@ -1,5 +1,5 @@
-APP_NAME = hello
-LIB_NAME = libhello
+APP_NAME = geometry
+LIB_NAME = libgeometry
 
 CFLAGS = -Wall -Wextra -Werror
 CPPFLAGS = -I src -MP -MMD
@@ -36,8 +36,9 @@ $(LIB_PATH): $(LIB_OBJECTS)
 
 $(OBJ_DIR)/%.o: %.c
 	$(CC) -c $(CFLAGS) $(CPPFLAGS) $< -o $@
-
-.PHONY: clean
+.PHONY: clean run
+run:
+	./$(BIN_DIR)/$(APP_NAME)
 clean:
 	$(RM) $(APP_PATH) $(LIB_PATH)
 	find $(OBJ_DIR) -name '*.o' -exec $(RM) '{}' \;
