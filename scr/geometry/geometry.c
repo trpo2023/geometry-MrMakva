@@ -1,3 +1,12 @@
+#include <ctype.h>
+#include <math.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "libgeometry/libgeometry.h"
+
+
 int main(int argc, char* argv[])
 {
     FILE* file = NULL;

@@ -36,9 +36,11 @@ $(LIB_PATH): $(LIB_OBJECTS)
 
 $(OBJ_DIR)/%.o: %.c
 	$(CC) -c $(CFLAGS) $(CPPFLAGS) $< -o $@
-.PHONY: clean run
+.PHONY: run
 run:
 	./$(BIN_DIR)/$(APP_NAME)
+
+.PHONY: clean
 clean:
 	$(RM) $(APP_PATH) $(LIB_PATH)
 	find $(OBJ_DIR) -name '*.o' -exec $(RM) '{}' \;
