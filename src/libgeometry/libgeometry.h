@@ -1,20 +1,20 @@
-#pragma once
-#include <ctype.h>
-#include <math.h>
-#include <stdbool.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
-void print_error(int column, int status, int is_file, FILE* file);
-void to_lower_string(char* string);
-void del_space(int* column, FILE* file);
-double get_number(int* column, int is_file, FILE* file);
-bool expect(char expect, int* column, int status, int is_file, FILE* file);
-bool unexpect(char unexpect, int* column, int status, int is_file, FILE* file);
-void get_point(Point* point, int* column, int is_file, FILE* file);
-void end_of_line(int* column, int is_file, FILE* file);
-void take_info_circle(Circle* circle, int* column, int is_file, FILE* file);
-void show_info_circle(Circle* circle);
-void parser_stdin(FILE* stdin);
-void parser_file(FILE* file);
+void check_word(char* a, char* b, int* error, int* ind_open_bracket);
+void find_close_bracket(char* a, int* length, int* ind_close_bracket);
+void check_first_num(
+        char* a, int* ind_open_bracket, int* ind_first_num_elm, int* error);
+void check_second_num(
+        char* a, int* ind_first_num_elm, int* ind_second_num_elm, int* error);
+void check_third_num(
+        char* a,
+        int* ind_second_num_elm,
+        int* ind_last_num_elm,
+        int* error,
+        int* ind_close_bracket);
+void check_close_bracket(
+        char* a,
+        int* ind_last_num_elm,
+        int* length,
+        int* ind_close_bracket,
+        int* error);
+void check_unexpected_token(
+        char* a, int* ind_close_bracket, int* length, int* error);
