@@ -1,7 +1,7 @@
 CC = gcc
 
-APP_NAME = Geometry
-LIB_NAME = LibGeometry
+APP_NAME = geometry
+LIB_NAME = libgeometry
 TEST_NAME = geometry_test
 
 CFLAGS = -Wall -Wextra -Werror 
