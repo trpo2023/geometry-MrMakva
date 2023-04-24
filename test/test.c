@@ -1,5 +1,7 @@
-#include "C:/Users/latsu/GitHub_projects/geometry/geometry-MrMakva/src/libgeometry/libgeometry.h"
-#include "C:/Users/latsu/GitHub_projects/geometry/geometry-MrMakva/thirdparty/libgeometry.h"
+// #include "libgeometry/libgeometry.h"
+// #include "thirdparty/ctest.h"
+#include "libgeometry/libgeometry.h"
+#include "ctest.h"
 
 #include <stdio.h>
 
