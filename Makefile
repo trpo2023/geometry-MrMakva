@@ -56,7 +56,7 @@ clean:
 
 .PHONY: test
 test: $(TEST_PATH)
-	./$(BIN_DIR)/$(TEST_NAME)
+	./$(TEST_PATH)
 
 -include $(DEPS)
 
