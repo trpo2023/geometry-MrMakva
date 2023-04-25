@@ -53,3 +53,5 @@ dkms.conf
 
 # Trash
 *.vscode
+bin/geometry
+bin/geometry_test
