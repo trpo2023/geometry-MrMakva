@@ -46,20 +46,20 @@ $(LIB_PATH): $(LIB_OBJECTS)
 $(OBJ_DIR)/%.o: %.c
 	$(CC) -c $(CFLAGS) $(CPPFLAGS) $(CPPFLAGST) $< -o $@
 
-.PHONY: clean run
-run: 
-	./$(BIN_DIR)/$(APP_NAME)
-clean:
-	$(RM) $(APP_PATH) $(TEST_PATH) $(LIB_PATH)
-	find $(OBJ_DIR) -name '*.o' -exec $(RM) '{}' \;
-	find $(OBJ_DIR) -name '*.d' -exec $(RM) '{}' \;
+.PHONY: run clean test runtest
 
-.PHONY: test
-test: $(TEST_PATH)
-	
+run:
+	./bin/geometry
 
 runtest:
-./$(TEST_PATH)
+	./bin/geometry_test
+
+clean:
+	$(RM) $(APP_PATH) $(OBJ_DIR)/*/*/*.[aod]
+	$(RM) bin/*.exe
+	$(RM) $(OBJ_DIR)/$(TEST_DIR)/*.[aod]
+
+test: $(TEST_PATH)
 
 -include $(DEPS)
 
