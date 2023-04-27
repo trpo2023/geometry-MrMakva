@@ -11,10 +11,8 @@ CTEST(INPUT_CHECK, OPEN_BRACKET_INDEX)
 {
     char* a = "circle(4 2, 8)";
     char* b = "circle";
-
     int expec = 6;
     int real = check_word(a, b, 0);
-
     ASSERT_EQUAL(expec, real);
 }
 
