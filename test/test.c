@@ -9,7 +9,6 @@
 
 CTEST(INPUT_CHECK, OPEN_BRACKET_INDEX)
 {
-    // correct input check
     char* a = "circle(4 2, 8)";
     char* b = "circle";
 
