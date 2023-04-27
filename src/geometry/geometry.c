@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include <libgeometry/libgeometry.h>
+#include "libgeometry/libgeometry.h"
 
 void token(char* a)
 {

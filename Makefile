@@ -46,12 +46,12 @@ $(LIB_PATH): $(LIB_OBJECTS)
 $(OBJ_DIR)/%.o: %.c
 	$(CC) -c $(CFLAGS) $(CPPFLAGS) $(CPPFLAGST) $< -o $@
 
-.PHONY: run clean test runtest
+.PHONY: run clean test run_test
 
 run:
 	./bin/geometry
 
-runtest:
+run_test:
 	./bin/geometry_test
 
 clean:
