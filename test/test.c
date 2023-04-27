@@ -1,11 +1,9 @@
 // #include "libgeometry/libgeometry.h"
 // #include "thirdparty/ctest.h"
-#include "libgeometry/libgeometry.h"
 #include "ctest.h"
+#include "libgeometry/libgeometry.h"
 
 #include <stdio.h>
-
-
 
 CTEST(INPUT_CHECK, OPEN_BRACKET_INDEX)
 {
