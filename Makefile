@@ -56,7 +56,10 @@ clean:
 
 .PHONY: test
 test: $(TEST_PATH)
-	./$(TEST_PATH)
+	
+
+runtest:
+./$(TEST_PATH)
 
 -include $(DEPS)
 
