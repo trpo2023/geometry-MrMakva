@@ -19,4 +19,4 @@ jobs:
         run: make test
 
       - name: Build runtest
-        run: make runtest
+        run: make run_test
