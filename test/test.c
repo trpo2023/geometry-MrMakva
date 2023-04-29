@@ -1,5 +1,3 @@
-// #include "libgeometry/libgeometry.h"
-// #include "thirdparty/ctest.h"
 #include "ctest.h"
 #include "libgeometry/libgeometry.h"
 
